@@ -1,0 +1,80 @@
+{% extends 'base.html' %}
+{% load staticfiles %}
+
+
+{% block content %}
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Pietster Beer - Homebrewed beer</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+
+    <!-- Custom styles for this template -->
+    <link href="css/Beersite.css" rel="stylesheet">
+
+  </head>
+
+  <body id="bg" style="background-image: url('{% static "img/hout.jpg" %}');/>
+
+    <div class="tagline-upper text-center text-heading text-shadow text-white mt-5 d-none d-lg-block"></div>
+    <div class="tagline-lower text-center text-expanded text-shadow text-uppercase text-white mb-5 d-none d-lg-block"></div>
+
+
+    <div class="container">
+
+      <div class="bg-faded p-4 my-4">
+      	{{ text|linebreaks }} <br>
+      	<hr class="divider">
+      	<h1 class="text-center text-lg text-uppercase my-0">
+          <strong>Types</strong>
+        </h1>
+        <hr class="divider">
+
+        <div class="col-md-4">
+        	<h3 class="text-center text-lg text-uppercase my-0">Belgian Blond</h3>
+        	<div class="col-lg-6">
+        	 <p class="text-center">This beer is brewed with Styrian and Saaz hop, which gives the beer a light character. Multiple types of malt are used, among which Abbey mout. The beer contains 5,5% Alcohol. Some walnut flavours are added which gives the beer its distinguisble taste. </p>
+        	 {{ text|linebreaks }} <br>
+          <a href="#"><img src="{% static 'img/belgianblond.jpg' %}" class='img-responsive'/>
+          	{{ text|linebreaks }} <br>
+          </a>
+          </div>
+
+        	<h3 class="text-center text-lg text-uppercase my-0">IPA</h3>
+        	<div class="col-lg-6">
+        	 <p class="text-center">Our IPA (India Pale Ale) consists of Cara and Pale malt, and Chinook hop which makes it taste fruity but bitter. The typical IPA taste, which comes from the extra hop and sugar added to the 'plain' recipy, is very present in this beer. The beer has a nice red-orange colour and contains 7% percent Alcohol. </p>
+        	 {{ text|linebreaks }} <br>
+          <a href="#"><img src="{% static 'img/IPA2.jpg' %}" class='img-responsive'/>
+          	{{ text|linebreaks }} <br>
+          </a>
+          </div>
+        </div>
+      </div>
+
+
+
+    </div>
+    <!-- /.container -->
+
+
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+  </body>
+
+</html>
+
+
+{% endblock %}

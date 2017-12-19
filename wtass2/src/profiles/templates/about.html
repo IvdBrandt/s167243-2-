@@ -1,0 +1,60 @@
+{% extends 'base.html' %}
+{% load staticfiles %}
+
+{% block content %}
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Homebrewed beers">
+    <meta name="author" content="Irma van den Brandt">
+
+    <title>Pietster Beer - Homebrewed beer</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="css/Beersite.css" rel="stylesheet">
+
+  </head>
+
+  <body id="bg" style="background-image: url('{% static "img/hout.jpg" %}');/>
+
+    <div class="container">
+
+      <div class="bg-faded p-4 my-4">
+      	{{ text|linebreaks }} <br>
+        <hr class="divider">
+        <h1 class="text-center text-lg text-uppercase my-0">
+          <strong>Pietster Beer</strong>
+        </h1>
+        <hr class="divider"/>
+        <div class="col-md-4">
+            <a href="#"><img src="{% static 'img/IPA.jpg' %}" class='img-responsive'/>
+            </a>
+          </div>
+          <div class="col-lg-6">
+          	 {{ text|linebreaks }} <br>
+            <p>Pietster Beer is a delicious homebrewed beer, brewed from the best hop of the Netherlands and Belgium. The taste is pure and powerful, the flavors of nature can be retrieved in the beer. More information about the types of beers and its ingredients can be found under the <a href="{% url 'types' %}">types</a> tab.</p>
+            <p>The brewery is located in Maastricht, close to the experts of the beer brewing art. The beer is very exclusive, and therefor sold out extremely fast. It is only possible to buy the beers by visiting the brewery. During this visit, you will be guided through the brewery and the hop plantations.  To visit the brewery, an appointment should be made by filling in the contact form on the <a href="{% url 'contact' %}">contact</a> page. 
+             </p>
+             {{ text|linebreaks }} <br>
+          </div>
+        </div>
+      </div>
+
+
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+  </body>
+
+</html>
+
+{% endblock %}

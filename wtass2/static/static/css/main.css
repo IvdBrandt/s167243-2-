@@ -1,0 +1,87 @@
+.btn-primary {
+    background-image: -webkit-linear-gradient(top,#337ab7 0,#265a88 100%);
+    background-image: -o-linear-gradient(top,#337ab7 0,#265a88 100%);
+    background-image: -webkit-gradient(linear,left top,left bottom,from(#337ab7),to(#265a88));
+    background-image: linear-gradient(to bottom,#1aff56 0,#265a88 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff337ab7', endColorstr='#ff265a88', GradientType=0);
+    filter: progid:DXImageTransform.Microsoft.gradient(enabled=false);
+    background-repeat: repeat-x;
+    border-color: #245580;
+}
+
+.navbar-default .navbar-brand {
+    color:  #265a88;
+}
+
+
+
+h1 {
+  font-size: 40px;
+  font-family: "Oswald", Oswald, sans-serif;
+}
+
+h2, h3, h4, h6, .text-heading {
+  font-family: "Oswald", Oswald, serif;
+}
+
+h5, .text-heading{
+  font-family: "Oswald", Oswald, serif;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+p {
+	font-family: "Oswald", Oswald, sans-serif;
+	font-size: 15px;
+
+}
+
+body {
+    background:  url("static/img/hout.jpg") no-repeat center center;
+    -webkit-background-size: cover;
+  	-moz-background-size: cover;
+  	background-size: cover;
+  	-o-background-size: cover;
+  	font-family: "Oswald", Oswald, sans-serif;
+}
+
+hr.divider {
+  border-color: #292b2c;
+  max-width: 250px;
+}
+
+.tagline-upper {
+  font-size: 5rem;
+  font-weight: 700;
+  line-height: 1;
+}
+
+.tagline-lower {
+  font-size: 1.2rem;
+  line-height: 1;
+}
+
+.bg-faded {
+  background-color: rgba(255, 255, 255, 0.9);
+}
+
+.bg-overlay {
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+form {
+  text-align: center;
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.map-container iframe {
+  pointer-events: none;
+}
+
+.map-container iframe.clicked {
+  pointer-events: auto;
+}
+
